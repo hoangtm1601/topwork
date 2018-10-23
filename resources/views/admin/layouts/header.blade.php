@@ -81,11 +81,22 @@
                                                     <li class="m-nav__separator m-nav__separator--fit">
                                                     </li>
                                                     <li class="m-nav__item">
-                                                        <a href="snippets/pages/user/login-1.html"
-                                                           class="btn m-btn--pill    btn-secondary m-btn
-                                                               m-btn--custom m-btn--label-brand m-btn--bolder">
-                                                            Logout
+                                                        <a class="m-nav__link"  href="{{ route('logout') }}"
+                                                           onclick="event.preventDefault();
+                                                            document.getElementById('logout-form').submit();">
+
+                                                            {{ __('Logout') }}
                                                         </a>
+
+                                                        {{--<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">--}}
+                                                            {{--@csrf--}}
+                                                        {{--</form>--}}
+                                                        {!! Form::open([
+                                                            'route' => 'logout',
+                                                            'method' => 'post',
+                                                             'id' => 'logout-form'
+                                                        ]) !!}
+                                                        {!! Form::close() !!}
                                                     </li>
                                                 </ul>
                                             </div>

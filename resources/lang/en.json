@@ -9,7 +9,11 @@
   "comment login":"In case you are using a public/shared computer <br/>we recommend that you logout to prevent any un-authorized access to your account",
   "email cant blank":"The email can't blank.",
   "password cant bank":"The password can't blank.",
-  "These credentials do not match our records":"Email or password does not match, please re-enter."
-
-
+  "These credentials do not match our records":"Email or password does not match, please re-enter.",
+  "Category Name":"Category Name",
+  "Description":"Description",
+  "Parent Category":"Parent Category",
+  "Add New":"Add New",
+  "Save":"Save",
+  "Cancel":"Cancel"
 }
